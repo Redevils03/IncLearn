@@ -4,7 +4,9 @@
   "description": "Capstone Project Solusi Pendidikan Inklusif",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
