@@ -29,7 +29,20 @@ const Home = {
           <h2>Media Belajar</h2>
         </div>
         <div class="learning-body">
-          <div style="display: inline" class="tes">tes</div>
+          <div class="content-media">
+            <div class="feature-list" style="display: flex; flex-direction: column; justify-content: center">
+              <img style="width: 300px; padding: 40px;" src="./images/Learning-pana.png">
+              <a href="#/artikel">Baca Artikel</a>
+            </div>
+            <div class="feature-list" style="display: flex; flex-direction: column; justify-content: center">
+              <img style="width: 300px; padding: 40px;" src="./images/Webinar-pana.png">
+              <a href="#/video">Tonton Video</a>
+            </div>
+            <div class="feature-list" style="display: flex; flex-direction: column; justify-content: center">
+              <img style="width: 300px; padding: 40px;" src="./images/Vowels-amico.png">
+              <a href="#/permainan">Permainan</a>
+            </div>
+          </div>
         </div>
       </div>
       `;
