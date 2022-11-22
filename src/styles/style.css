@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Coda', cursive;
+}
+
+/* ================================ header ================================ */
+header {
+  display: inline;
+}
+
+/* navbar */
+.app-bar {
+  display: flex;
+  width: 100%;
+  padding: 10px 130px;
+  align-items: center;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  }
+
+nav ul{
+  display: flex;
+}
+
+nav li {
+  list-style-type: none;
+  margin: 0px 20px 0px 20px;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: #ef4651;
+  font-weight: bold;
+}
+
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  z-index: 100;
+  text-decoration: none;
+  }
+  
+.skip-link:focus {
+  top: 0;
+}
+
+/* ================================ main ================================ */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin: 0 130px;
+}
+
+.learning-header{
+  text-align: center;
+}
+
+.learning-header h2{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.learning-body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 750px;
+  width: 100%;
+  margin-bottom: 50px;
+  background-image: url("../public/images/bg-fitur.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.content-media{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero, .article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.hero_text, .article_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.hero_text h1 {
+  color: #3AA2C9;
+  font-size: 46px;
+}
+
+.hero_text h3 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  color: #ef4651;
+}
+
+.hero_text p {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 10px;
+  max-width: 90%;
+}
+
+.hero_image, .article_image {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.hero_image img{
+  max-width: 100%;
+}
+
+.article_text h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  color: #3AA2C9;
+}
+
+.article_text p {
+  padding-top: 10px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.article_image img {
+  max-width: 100%;  
+}
+
+/* ================================ footer ================================ */
+.my-footer {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ef4651;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer_sosmed img{
+  padding: 8px;
+}
+
+.footer_brand {
+  text-align: center;
+}
+
+.footer_brand h1{
+  letter-spacing: 5px;
+}
+
+.footer_info {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  flex-grow: 2;
+}
+
+.footer_info-list {
+  display: flex;
+}
+
+/* ================================ Games ================================ */
+
+#memory-game {
+  width: 660px;
+  height: 570px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  background: #c4e3ef;
+  backface-visibility: hidden;
+}
+
+.back-face {
+  padding: 60px 20px;
+}
+
+.front-face {
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+#timer-memory {
+  text-align: center;
+}
+
+#reset-memory {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 5px 30vw 20px;
+  cursor: pointer;
+}
