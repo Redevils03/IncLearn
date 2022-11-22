@@ -1,5 +1,6 @@
 import './components/app-bar';
 import './components/my-footer';
+import './components/search-bar';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import App from './views/app';
