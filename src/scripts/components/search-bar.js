@@ -27,8 +27,9 @@ class SearchBar extends HTMLElement {
           padding: 0 10px;
         }
         .search-bar > img {
-          height: 25px;
+          height: 20px;
           opacity: 0.5;
+          padding-right: 5px;
         }
         
         .search-bar > img:hover {
@@ -48,8 +49,8 @@ class SearchBar extends HTMLElement {
         }
       </style>
       <div class="search-bar">
-        <input id="searchElement" placeholder="Cari..."></input>
         <img id="searchButtonElement" src="./icons/search.png">
+        <input id="searchElement" type="search" placeholder="Cari..."></input>
       </div>
       `;
 

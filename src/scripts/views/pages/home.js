@@ -40,7 +40,7 @@ const Home = {
             </div>
             <div class="feature-list">
               <img src="./images/Vowels-amico.png">
-              <a class="button" href="#/permainan"><span class="fokus">Permainan</span></a>
+              <a class="button" href="#/permainan"><span>Permainan</span></a>
             </div>
           </div>
         </section>

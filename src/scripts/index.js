@@ -1,3 +1,4 @@
+import 'regenerator-runtime';
 import './components/app-bar';
 import './components/my-footer';
 import './components/search-bar';
