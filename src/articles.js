@@ -1,6 +1,7 @@
 const articles = [
   {
     id: "5lmutUH_eScFMcp",
+    image: "https://www.ugm.ac.id/galleries/crop/7889--730x420px.jpg",
     title: "Penyandang Disabilitas Mampu Berkontribusi dalam Pembangunan",
     body: [
       "Menjadi bagian dalam peran-peran pembangunan bangsa adalah hak dan kewajiban setiap warga negara. Setiap orang memiliki cara-cara tersendiri dalam mengekspresikan perannya dalam pembangunan. Sama halnya dengan penyandang disabilitas yang juga memiliki hak dalam mengekspresikan kemampuannya dalam peran-peran pembangunan bangsa. Ada paradigma yang selama ini berkembang tentang para penyandang disabilitas, yaitu mereka tidak bisa berbuat seperti orang normal atau menjadi orang yang banyak memberi kontribusi dalam pembangunan bangsa layaknya orang pada biasanya.",
@@ -24,6 +25,7 @@ const articles = [
   },
   {
     id: 'QBc0k0eSmgzeE8x',
+    image: "https://www.kemhan.go.id/pusrehab/wp-content/themes/pusrehab/images/logo.png",
     title: "KEBIJAKAN PENANGANAN PENYANDANG DISABILITAS PERSONEL KEMHAN DAN TNI",
     body: [
       "Penyandang disabilitas merupakan bagian dari masyarakat Indonesia yang mempunyai kedudukan, hak, kewajiban, serta peran yang sama dengan masyarakat Indonesia lainnya dalam kehidupan dan penghidupannya. Oleh karena itu, diperlukan adanya kebijakan pemerintah yang memperhatikan dan mewadahi tentang hak penyandang disabilitas dalam kegitan kehidupannya dalam masyarakat.",
@@ -41,6 +43,7 @@ const articles = [
   },
   {
     id: 'ja8ajdk83jfnsi8',
+    image: "https://indonesiabaik.id/public/uploads/post/1291/16112017-Penyandang-Disabilitas-Sukses-Indonesia_GAM.png",
     title: 'Penyandang disabilitas yang sukses di indonesia',
     body: [ "Berprestasi dan mengharumkan nama Indonesia dikanca dunia adalah kebanggan bagi diri sendiri dan masyarakat. Termasuk juga bagi para penyandang disabilitas yang telah sukses dalam berkarya dan berdampak  positif bagi dirinya dan orang lain.",
 
