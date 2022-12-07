@@ -2,14 +2,14 @@ const {nanoid} = require('nanoid');
 const articles = require('./articles');
 
 const addArticleHandler = (request, h) => {
-  const {title, article, from, resource} = request.payload;
+  const {image, title, article, from, resource} = request.payload;
 
   const id = nanoid(15);
   const insertedAt = new Date().toISOString();
   const updatedAt = insertedAt;
   
   const newArticle = {
-    id, title, article, from, resource, insertedAt, updatedAt
+    id, image, title, article, from, resource, insertedAt, updatedAt
   };
   const hasTitle = request.payload.hasOwnProperty('title')
   if (!hasTitle) {
@@ -76,7 +76,7 @@ const getArticleById = (request, h) => {
 const editArticleByIdHandler = (request, h) => {
   const {articleId} = request.params;
 
-  const {title, body, from, resource} = request.payload;
+  const {image, title, body, from, resource} = request.payload;
   const updatedAt = new Date().toISOString();
 
   if(!title) {
@@ -93,6 +93,7 @@ const editArticleByIdHandler = (request, h) => {
   if(index !== -1) {
     articles[index] = {
       ...articles[index],
+      image,
       title,
       body,
       from,
