@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const createArticleTemplate = (article) => `
   <a class="click-detail" href="${`/#/detail/${article.id}`}"><div class="card-item">
     <div class="card-item__header">
