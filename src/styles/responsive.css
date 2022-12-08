@@ -140,6 +140,49 @@
   .button>span {
     font-size: 14px;
   }
+
+  /* Games */
+  #game {
+    width: 460px;
+    height: 370px;
+  }
+
+  .back-face {
+    padding: 25px 20px;
+  }
+
+  #gameMath {
+    width: 600px;
+    height: auto;
+  }
+
+  #gameMath h2, #cekInputNumber {
+    font-size: 17px;
+  }
+
+  .symbol {
+    width: 20px;
+  }
+
+  .firstNumber, .secondNumber {
+    width: 50px;
+  }
+
+  .firstSection, .secondSection {
+    width: 160px;
+  }
+
+  #inputNumber {
+    font-size: 20px;
+  }
+
+  .inputNumberSection {
+    height: 300px;
+  }
+
+  .jawabSalah {
+    margin-top: 10px;
+  }
 }
 
 @media  screen and (max-width: 600px) {
@@ -162,6 +205,32 @@
   .footer_info {
     padding-top: 3px;
   }
+  /* Games */
+  #gameMath {
+    width: 400px;
+    height: auto;
+  }
+
+  .firstNumber, .secondNumber {
+    width: 45px;
+  }
+
+  .firstSection, .secondSection {
+    width: 140px;
+  }
+
+  .symbol {
+    margin: 0 10px;
+  }
+
+  .inputNumberSection {
+    height: 300px;
+  }
+
+  .jawabSalah {
+    display: block;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -170,5 +239,26 @@
   }
   .footer_info {
     font-size: 10px;
+  }
+  /* Games */
+  #gameMath {
+    width: 320px;
+    height: auto;
+  }
+
+  .inputNumberSection {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Games */
+  #game {
+    width: 360px;
+    height: 270px;
+  }
+
+  .back-face {
+    padding: 10px;
   }
 }
