@@ -1,20 +1,24 @@
-import createArticleTemplate from '../templates/article-template';
+import IncelarnSource from '../../data/inclearn-source';
+import { createArticleTemplate } from '../templates/template-creator';
 
 const Article = {
   async render() {
     return `
-      <div class="content" style="min-height: 100%">
+      <div class="content">
         <search-bar class="search-bar"></search-bar>
-        <article id="articles" class="articles">
+        <div id="articles" class="articles">
           
-        </article>
+        </div>
       </div>
     `;
   },
 
   async afterRender() {
-    const articleContainer = document.querySelector('#articles');
-    articleContainer.innerHTML = createArticleTemplate();
+    const articles = await IncelarnSource.getArticles();
+    const articleTemplate = document.querySelector('#articles');
+    articles.forEach((article) => {
+      articleTemplate.innerHTML += createArticleTemplate(article);
+    });
   },
 };
 

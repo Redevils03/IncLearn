@@ -1,20 +1,24 @@
-import createVideoTemplate from '../templates/video-template';
+import IncelarnSource from '../../data/inclearn-source';
+import { createVideoTemplate } from '../templates/template-creator';
 
 const Video = {
   async render() {
     return `
-      <div class="content" style="min-height: 100%">
+      <div class="content">
         <search-bar class="search-bar"></search-bar>
-        <article id="videos" class="videos">
+        <div id="videos" class="videos">
 
-        </article>
+        </div>
       </div>
     `;
   },
 
   async afterRender() {
+    const videos = await IncelarnSource.getVideos();
     const videoTemplate = document.querySelector('#videos');
-    videoTemplate.innerHTML = createVideoTemplate();
+    videos.forEach((video) => {
+      videoTemplate.innerHTML += createVideoTemplate(video);
+    });
   },
 };
 

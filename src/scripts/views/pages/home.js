@@ -19,9 +19,10 @@ const Home = {
           <div class="product_text">
             <h2>IncLearn</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-              Temporibus ullam rem cumque qui officiis dolorem sint esse expedita voluptates, 
-              aliquid non placeat labore totam itaque eos. Ipsa enim excepturi perferendis.
+              IncLearn merupakan sebuah website yang menawarkan materi pembelajaran yang digunakan untuk membantu
+              para penyandang disabilitas mendapatkan pendidikan. Diharapkan dengan adanya website ini
+              para penyandang disabilitas mendapatkan akses pendidikan lebih mudah sehingga mereka menjadi lebih percaya diri
+              dan membuka wawasannya untuk mengembangkan diri.
             </p>
           </div>
         </section>
