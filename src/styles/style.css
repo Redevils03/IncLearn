@@ -275,7 +275,7 @@ main {
 .card-item__article-detail img {
   margin: auto;
   font-size: 30px;
-  text-align: center;
+  width: 100%;
 }
 
 .card-item__article-detail .article-info {
