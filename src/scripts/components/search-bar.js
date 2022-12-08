@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 class SearchBar extends HTMLElement {
   constructor() {
     super();
