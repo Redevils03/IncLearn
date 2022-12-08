@@ -7,13 +7,51 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable max-len */
 /* eslint-disable quotes */
-
 const gameMenu = `
-  <button class="game-item" id="memory-start">Kartu Memori</button>
-  <button class="game-item" id="math-start">Ayo Berhitung</button>
-  <button class="game-item" id="math-start-2">Berhitung Cepat</button>
-  <button class="game-item" id="speed-start">Membeli Buah Bersama</button>
-  <button class="game-item" id="speed-start-2">Membeli Buah Cepat</button>
+  <div class="content">
+    <div class="games" id="games">
+      <button class="card-item" id="memory-start">
+        <div class="card-item__header">
+          <img class="card-item__header__poster" src="./images/game1.png">
+        </div>
+        <div class="card-item__content">
+          <h3 class=""card__title">Kartu Memori</h3>
+        </div>
+      </button>
+      <button class="card-item" id="math-start">
+        <div class="card-item__header">
+          <img class="card-item__header__poster" src="./images/game2.webp">
+        </div>
+        <div class="card-item__content">
+          <h3 class=""card__title">Ayo Berhitung</h3>
+        </div>
+      </button>
+      <button class="card-item" id="math-start-2">
+        <div class="card-item__header">
+          <img class="card-item__header__poster" src="./images/game2.webp">
+        </div>
+        <div class="card-item__content">
+          <h3 class=""card__title">Berhitung Cepat</h3>
+        </div>
+      </button>
+      <button class="card-item" id="speed-start">
+        <div class="card-item__header">
+          <img class="card-item__header__poster" src="./images/game3.jpg">
+        </div>
+        <div class="card-item__content">
+          <h3 class=""card__title">Membeli Buah Bersama</h3>
+        </div>
+      </button>
+      <button class="card-item" id="speed-start-2">
+        <div class="card-item__header">
+          <img class="card-item__header__poster" src="./images/game5.jpg">
+        </div>
+        <div class="card-item__content">
+          <h3 class=""card__title">Membeli Buah Cepat</h3>
+        </div>
+      </button>
+    </div>
+  </div>
 `;
 
 const gameOption = `

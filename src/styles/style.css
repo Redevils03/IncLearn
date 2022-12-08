@@ -199,7 +199,7 @@ main {
   margin: 50px;
 }
 
-.articles, .videos {
+.articles, .videos, .games {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -230,8 +230,6 @@ main {
 }
 
 .card-item .card-item__header {
-  bottom: 20px;
-  left: 0;
   display: inline-block;
   color: white;
 }
@@ -295,6 +293,12 @@ main {
 }
 
 /* ================================ Games ================================ */
+
+.games button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
 
 #game, #gameMath {
   width: 660px;
