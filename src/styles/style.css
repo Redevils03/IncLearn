@@ -259,6 +259,34 @@ main {
   -webkit-line-clamp: 3; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
+
+.card-item__article-detail {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item__article-detail h2 {
+  margin-bottom: 40px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card-item__article-detail img {
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-item__article-detail .article-info {
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+.card-item__article-detail .article-info a {
+  text-decoration: none;
+  color: #ef4651;
+}
 /* ================================ footer ================================ */
 .my-footer {
   display: flex;
