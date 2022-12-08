@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class IncelarnSource {

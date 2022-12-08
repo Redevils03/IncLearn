@@ -199,7 +199,7 @@ main {
   margin: 50px;
 }
 
-.articles, .videos {
+.articles, .videos, .games {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -230,8 +230,6 @@ main {
 }
 
 .card-item .card-item__header {
-  bottom: 20px;
-  left: 0;
   display: inline-block;
   color: white;
 }
@@ -320,4 +318,180 @@ main {
 
 .footer_info-list {
   display: flex;
+}
+
+/* ================================ Games ================================ */
+
+.games button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+#game, #gameMath {
+  width: 660px;
+  height: 570px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gameMath {
+  width: 800px;
+  height: auto;
+  justify-content: center;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  background: #c4e3ef;
+  backface-visibility: hidden;
+}
+
+.back-face {
+  padding: 60px 20px;
+}
+
+.front-face {
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+#timer, #reset {
+  text-align: center;
+  margin-right: 20px;
+}
+
+#reset, #backToMenu, .game-item {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#backToMenu {
+  background-color: #4CAF50;
+}
+
+.game-item {
+  background-color: #4CAF50;
+  margin: 20px 30vw 20px;
+}
+
+.gameOption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 35px;
+}
+
+.firstSection, .secondSection {
+  width: 220px;
+  display: flex;
+  align-content: center;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+.secondSection {
+  justify-content: left;
+}
+
+.firstNumber, .secondNumber {
+  width: 70px;
+}
+
+.symbol {
+  width: 50px;
+  margin: 0 40px;
+}
+
+#inputNumber {
+  width: 100px;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  height: 40px;
+}
+
+#cekInputNumber {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+#gameMath h2 {
+  text-align: center;
+  flex: 0 0 100%;
+  margin: 50px 0 20px;
+}
+
+.inputNumberSection {
+  text-align: center;
+  height: 320px;
+}
+
+.jawabSalah {
+  color: red;
+  display: inline;
+  margin-left: 20px;
+}
+
+.gameSelesai {
+  margin-top: 10px;
+  color: green;
+}
+
+.addFruit, .minusFruit {
+  margin: 10px;
+  cursor: pointer;
+}
+
+#belanjaBox {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-style: dashed;
+  width: 370px;
+  height: 310px;
+  flex-wrap: wrap;
+}
+
+#gameMath h3 {
+  text-align: center;
+  flex: 0 0 100%;
+  padding: 30px;
+}
+
+.checkSection {
+  width: 460px;
+  height: 200px;
+  text-align: center;
 }
