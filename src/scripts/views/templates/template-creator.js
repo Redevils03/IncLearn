@@ -6,7 +6,7 @@ const createArticleTemplate = (article) => `
     </div>
     <div class="card-item__content">
       <h3 class="card__title">${article.title}</h3>
-      <span>${article.from}</span>
+      <span>oleh: ${article.from}</span>
       <p>${article.body}</p>
     </div>
   </div></a>
@@ -29,15 +29,35 @@ const createArticleDetailTemplate = (article) => {
 };
 
 const createVideoTemplate = (video) => `
-  <div class="card-item">
+  <a class="click-detail" href="${`/#/detail-video/${video.id}`}"><div class="card-item">
     <div class="card-item__header">
-    <iframe width='400' height='300' src="${video.link}" frameborder='0' allowFullScreen></iframe>
+    <img class="card-item__header__poster" src="./images/Learning-pana.png" alt="${video.title}">
     </div>
     <div class="card-item__content">
       <h3 class="card__title">${video.title}</h3>
-      <p>${video.desc}</p>
     </div>
-  </div>
+  </div></a>
 `;
 
-export { createArticleTemplate, createArticleDetailTemplate, createVideoTemplate };
+const createVideoDetailTemplate = (video) => {
+  let videoContentContainer = '';
+  video.desc.forEach((paragraph) => {
+    videoContentContainer += `<p class="article-content">${paragraph}</p><br>`;
+  });
+
+  return `
+    <div class="card-item__article-detail">
+      <h2>${video.title}</h2>
+      <iframe height='500' src="${video.link}" alt="${video.title}" frameborder='0' allowFullScreen></iframe>
+      <h3>Transkrip:</h3>
+      <div class="article-content-container">${videoContentContainer}</div>
+    </div>
+  `;
+};
+
+export {
+  createArticleTemplate,
+  createArticleDetailTemplate,
+  createVideoTemplate,
+  createVideoDetailTemplate,
+};
