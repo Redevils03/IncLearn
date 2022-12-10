@@ -286,6 +286,10 @@ main {
   color: #ef4651;
 }
 
+.card-item__article-detail h3 {
+  margin-top: 40px;
+}
+
 /* ================================ footer ================================ */
 .my-footer {
   display: flex;
