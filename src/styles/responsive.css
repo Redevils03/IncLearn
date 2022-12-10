@@ -1,18 +1,18 @@
 @media only screen and (min-width: 400px) {
-  .articles, .videos {
+  .articles, .videos, .games {
     grid-template-columns: 1fr;
     justify-items: center;
   }
 }
 
 @media screen and (min-width: 850px) {
-  .articles, .videos {
+  .articles, .videos, .games {
       grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .articles, .videos {
+  .articles, .videos, .games {
       grid-template-columns: repeat(3, 1fr);
   }
 }

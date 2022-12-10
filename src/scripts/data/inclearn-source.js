@@ -19,6 +19,12 @@ class IncelarnSource {
     const responseJson = await response.json();
     return responseJson.data.article;
   }
+
+  static async detailVideo(id) {
+    const response = await fetch(API_ENDPOINT.DETAIL_VIDEO(id));
+    const responseJson = await response.json();
+    return responseJson.data.video;
+  }
 }
 
 export default IncelarnSource;

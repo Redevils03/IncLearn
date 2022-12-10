@@ -78,6 +78,7 @@ nav a:hover {
 main {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .content {
@@ -208,7 +209,6 @@ main {
 
 .card-item {
   width: 400px;
-  height: 500px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow: hidden;
@@ -242,11 +242,11 @@ main {
 .card-item .card-item__content h3 {
   font-size: 16px;
   margin: 0;
+  min-height: 50px;
 }
 
 .card-item .card-item__content span {
   font-size: 10px;
-
 }
 
 .card-item .card-item__content p {
@@ -257,6 +257,39 @@ main {
   -webkit-line-clamp: 3; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
+
+.card-item__article-detail {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item__article-detail h2 {
+  margin-bottom: 40px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card-item__article-detail img {
+  margin: auto;
+  font-size: 30px;
+  width: 100%;
+}
+
+.card-item__article-detail .article-info {
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+.card-item__article-detail .article-info a {
+  text-decoration: none;
+  color: #ef4651;
+}
+
+.card-item__article-detail h3 {
+  margin-top: 40px;
+}
+
 /* ================================ footer ================================ */
 .my-footer {
   display: flex;
